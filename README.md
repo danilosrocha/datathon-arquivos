@@ -5,7 +5,7 @@ Datathon Proteção Inteligente — desafio **Seguro Empresarial**.
 ## Identificação da equipe
 
 - **Equipe:** Xenga
-- **Integrantes:** Danilo da Silva Rocha, Marcus Vinicius Abrante, Aerton Pinheiro Marzagao
+- **Integrantes:** Danilo Rocha, Marcus Vinicius, Aerton Marzagão
 - **Instituição/turma:** Externo
 
 ## Conteúdo deste repositório
