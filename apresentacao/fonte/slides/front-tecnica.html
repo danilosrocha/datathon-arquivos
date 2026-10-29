@@ -1,0 +1,43 @@
+<section id="front-tecnica" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Front-end</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Como o front foi construído</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;flex:1">
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Code" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Stack</h3>
+<p style="font-size:26px;line-height:1.4">Next.js (App Router), TypeScript estrito, Tailwind, shadcn/ui e Motion. Deploy na Vercel.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Lightning" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Tempo real (SSE)</h3>
+<p style="font-size:26px;line-height:1.4">Parser próprio sobre fetch para enviar o X-Case-Token; reconecta com Last-Event-ID.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Settings" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Estado do caso</h3>
+<p style="font-size:26px;line-height:1.4">Um useReducer alimentado pelos eventos do servidor. Sem Zustand, sem TanStack Query.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Link" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Contrato tipado</h3>
+<p style="font-size:26px;line-height:1.4">Tipos REST gerados do OpenAPI do back; eventos SSE espelham o contrato.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Play" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Modo demonstração</h3>
+<p style="font-size:26px;line-height:1.4">Transporte mock com o mesmo contrato: o front andou antes do back e a demo sobrevive sem API.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Users" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Acessibilidade</h3>
+<p style="font-size:26px;line-height:1.4">Contraste AA, teclado nos cards, aria-live no chat, reduced-motion, a partir de 360 px.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Front-end</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">05 / 22</p>
+<aside>Decisões técnicas do front. O estado do caso é um reducer que aplica os eventos que o back emite por SSE; não precisamos de biblioteca de estado. O EventSource nativo não envia cabeçalhos, então escrevemos um parser sobre fetch para mandar o token do caso e retomar do último evento. O modo demonstração reproduz um roteiro gravado com exatamente os mesmos eventos do contrato, o que permitiu desenvolver o front em paralelo e é o que aparece no vídeo.</aside>
+</section>

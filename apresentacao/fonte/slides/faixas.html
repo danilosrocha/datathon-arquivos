@@ -1,0 +1,30 @@
+<section id="faixas" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · faixas de indenização</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Faixas de IS, cada uma com sua confiança</h2>
+</div>
+<div style="display:flex;gap:64px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<p style="font-size:28px;line-height:1.45"><b style="color:#002D72">IS (importância segurada)</b> é a indenização máxima. Cada cobertura tem uma regra EST-* que transforma fatos em faixa “R$ mín. – R$ máx.”.</p>
+<div style="display:flex;flex-direction:column;gap:12px;background:#F2F4FF;border-radius:20px;padding:32px">
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Básica:</b> soma de prédio e/ou conteúdo, de R$ 100 mil a R$ 7,5 mi</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Proporcional, tabela, contagem, fontes:</b> a primeira base disponível no caso</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">IS sugerida:</b> ponto médio, arredondado para baixo a R$ 5 mil</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.45">Confiança da faixa = média do peso de cada entrada usada:</p>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">confirmado</p><div style="width:520px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">1,0</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">observado</p><div style="width:416px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,8</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">derivado</p><div style="width:364px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,7</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">estimado</p><div style="width:208px;height:40px;background:#E0C800;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,4</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">vaga vazia</p><div style="width:4px;height:40px;background:#9AA3BD"></div><p style="font-size:26px;font-weight:700;color:#002D72">0</p></div>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Confiança geral = média(faixas, plano). Sobe à medida que o cliente confirma os cards.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · catalog/estimativas.yaml · 17 regras EST-*</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">15 / 22</p>
+<aside>Cada cobertura recebe uma faixa de importância segurada, que é a indenização máxima. As faixas saem de 17 regras EST-*, sete do contrato e dez da equipe. A cobertura básica soma prédio e conteúdo, com piso de 100 mil e teto de 7,5 milhões; as demais usam cálculos proporcionais, tabelas ou contagens, sempre pela melhor fonte disponível no caso. A confiança de cada faixa é a média dos pesos das entradas usadas: um dado confirmado vale 1, um estimado 0,4 e uma vaga sem dado vale zero. A confiança geral combina faixas e a sustentação do plano. Por isso a confiança cresce na jornada web: cada card que o cliente confirma passa a valer 1.</aside>
+</section>

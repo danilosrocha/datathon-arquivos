@@ -1,0 +1,29 @@
+<section id="pergunta" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · a pergunta certa</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Perguntar só o que muda a recomendação</h2>
+</div>
+<div style="background:#002D72;border-radius:24px;padding:40px 56px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:44px;font-weight:600;color:#FFFFFF;line-height:1.3">score(k) = <span style="color:#FCFC30">1000</span> · [decide elegibilidade] + <span style="color:#FCFC30">impacto</span> × <span style="color:#FCFC30">incerteza</span> − <span style="color:#FCFC30">custo</span></p>
+</div>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Impacto</h3>
+<p style="font-size:26px;line-height:1.4">Coberturas que mudam se k for sim ou não. Contrafactual: o motor roda duas vezes.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Incerteza</h3>
+<p style="font-size:26px;line-height:1.4">1 − |2p − 1|, com p do grafo ou da estimativa. Máxima em p = 0,5.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Custo</h3>
+<p style="font-size:26px;line-height:1.4">0 para sim/não · 0,2 para seleção · 0,5 para número ou texto.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.45"><b style="color:#002D72">Para quando</b> o caso é inelegível, não há elegibilidade em aberto e nenhum fato restante muda a oferta, ou depois de 15 perguntas.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/engine/questions.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">16 / 22</p>
+<aside>Quem escolhe a próxima pergunta é o motor, não o LLM. Para cada fato candidato calculamos um score. Fatos que decidem uma regra de elegibilidade em aberto têm prioridade absoluta. Depois vem impacto vezes incerteza menos custo. O impacto é contrafactual: rodamos o motor com o fato verdadeiro e com o fato falso e contamos quantas coberturas da melhor oferta mudam. A incerteza é máxima quando a probabilidade está em 0,5 e zero quando já sabemos. E perguntas de sim ou não custam menos do que pedir um número. É por isso que a conversa pergunta só o necessário. O LLM apenas redige a pergunta escolhida em linguagem natural.</aside>
+</section>

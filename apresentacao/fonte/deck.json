@@ -1,0 +1,27 @@
+{
+  "v": 4,
+  "createdOnFiles": { "v": 1, "at": "2026-10-29T12:00:00Z" },
+  "lists": "css",
+  "title": "Negócio de Pé — Apresentação",
+  "cover": "cover",
+  "order": [
+    "cover", "problema", "solucao",
+    "front-jornada", "front-tecnica",
+    "back-principio", "back-arquitetura", "fatos", "base-comum", "dados-externos", "grafo",
+    "motor", "elegibilidade", "plano", "faixas", "pergunta", "exemplo", "agentes",
+    "resultados", "distribuicao",
+    "limitacoes", "fim"
+  ],
+  "sections": {
+    "s1": { "description": "Abertura: o problema e a proposta do Negócio de Pé.", "start": "cover" },
+    "s2": { "description": "Front-end: a jornada conversacional e como ela foi construída.", "start": "front-jornada" },
+    "s3": { "description": "Back-end: como os dados viram fatos, e os fatos viram recomendação.", "start": "back-principio" },
+    "s4": { "description": "Resultados medidos na base comum de teste.", "start": "resultados" },
+    "s5": { "description": "Limitações, próximos passos e encerramento.", "start": "limitacoes" }
+  },
+  "faces": {
+    "poppins": { "family": "Poppins", "href": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" },
+    "inter": { "family": "Inter", "href": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" }
+  },
+  "designSystems": []
+}

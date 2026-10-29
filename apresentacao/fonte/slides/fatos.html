@@ -1,0 +1,23 @@
+<section id="fatos" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · dados</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Todo dado vira um fato, com natureza e confiança</h2>
+</div>
+<table style="font-size:28px;color:#33405C;border:1px solid #DCE1F5;border-radius:16px">
+<tr style="background:#002D72"><th style="width:18%;color:#FFFFFF;padding:18px 24px">Natureza</th><th style="width:44%;color:#FFFFFF">De onde vem (exemplos)</th><th style="width:14%;color:#FFFFFF;text-align:center">Peso</th><th style="width:24%;color:#FFFFFF">Selo no front</th></tr>
+<tr><td><b>confirmado</b></td><td>O cliente respondeu ou confirmou o card</td><td style="text-align:center">1,0</td><td>Confirmado</td></tr>
+<tr style="background:#F2F4FF"><td><b>observado</b></td><td>Campos cadastrais: CNAE, empregados, município</td><td style="text-align:center">0,8</td><td>Disponível</td></tr>
+<tr><td><b>derivado</b></td><td>Recalculável por fórmula: estoque, despesas fixas, bens</td><td style="text-align:center">0,7</td><td>Disponível</td></tr>
+<tr style="background:#F2F4FF"><td><b>estimado</b></td><td>Probabilidades, índices e risco regional</td><td style="text-align:center">0,4</td><td>Estimado</td></tr>
+<tr><td><b>rejeitado</b></td><td>Removido pelo cliente: sai do caso</td><td style="text-align:center">—</td><td>Não aparece</td></tr>
+</table>
+<div style="display:flex;gap:24px;align-items:center;background:#FFFBC2;border-radius:16px;padding:24px 32px">
+<x-icon name="Lightbulb" style="color:#002D72;width:44px;height:44px"></x-icon>
+<p style="font-size:28px;line-height:1.4;color:#002D72">Peso de cada entrada = mín(peso da natureza, qualidade declarada na base: ALTA 0,9 · MÉDIA 0,6 · BAIXA 0,3).</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/domain/facts.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">08 / 22</p>
+<aside>A peça central do back é o fato. Cada informação, venha da base, da conversa ou de uma API pública, é guardada com uma natureza que diz quanto podemos confiar nela. Confirmado pelo cliente vale 1; observado no cadastro, 0,8; derivado por fórmula, 0,7; estimado, 0,4. Esses pesos alimentam a confiança das faixas e da recomendação. E a natureza é exatamente o que o front mostra como selo nos cards. A qualidade declarada pela própria base pode rebaixar o peso: um dado com vínculo BAIXA vale no máximo 0,3.</aside>
+</section>

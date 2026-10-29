@@ -1,0 +1,52 @@
+<section id="agentes" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · jornada conversacional</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">A cada mensagem, um ciclo LangGraph</h2>
+</div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="flex:1;border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">extract</p>
+<p style="font-size:24px;line-height:1.35">LLM rápido: texto livre → fatos</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">enrich</p>
+<p style="font-size:24px;line-height:1.35">CEP → município → risco regional</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#FCFC30;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">reason</p>
+<p style="font-size:24px;line-height:1.35;color:#002D72">Motor: decide e escolhe a pergunta</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="border:2px solid #465EFF;border-radius:20px;padding:20px 28px;display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">ask</p>
+<p style="font-size:24px;line-height:1.35">LLM redige a pergunta</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:20px 28px;display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">explain</p>
+<p style="font-size:24px;line-height:1.35">LLM + validador explicam</p>
+</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">API FastAPI</h3>
+<p style="font-size:24px;line-height:1.4">Caso anônimo com X-Case-Token. Comandos respondem 202; o resultado chega por SSE.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">Postgres (Supabase)</h3>
+<p style="font-size:24px;line-height:1.4">Casos, fatos, recomendações e auditoria append-only.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">Grafo que aprende</h3>
+<p style="font-size:24px;line-height:1.4">Fatos confirmados geram nova versão do grafo, publicada para os próximos casos.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/agents/profiling/graph.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">18 / 22</p>
+<aside>Na jornada web, cada mensagem do cliente dispara um ciclo em LangGraph. O extrator, com um modelo rápido, transforma o texto em fatos. O enriquecimento resolve CEP e risco regional. O nó reason roda o mesmo motor do lote e escolhe a próxima pergunta. Se ainda há o que perguntar, o LLM só redige essa pergunta; se não, o explicador reescreve a justificativa e um validador garante que ela não contradiz a decisão. A API é FastAPI com caso anônimo protegido por token, os comandos respondem 202 e o resultado chega pelo SSE que o front consome. Com Postgres, guardamos auditoria append-only, e os fatos confirmados podem gerar uma nova versão do grafo.</aside>
+</section>

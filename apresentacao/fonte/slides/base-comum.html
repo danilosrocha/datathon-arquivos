@@ -1,0 +1,33 @@
+<section id="base-comum" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · base comum</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Limiares calibrados na distribuição real</h2>
+</div>
+<div style="display:flex;gap:48px;flex:1">
+<div style="flex:3;display:flex;flex-direction:column;gap:20px">
+<table style="font-size:26px;color:#33405C">
+<tr style="background:#F2F4FF"><th style="width:34%;color:#002D72;padding:14px 20px">Sinal da base</th><th style="width:33%;color:#002D72">Vira “sim”</th><th style="width:33%;color:#002D72">Vira “não”</th></tr>
+<tr><td>Receita de delivery</td><td>≥ 15%</td><td>—</td></tr>
+<tr><td>Vendas online</td><td>≥ 60%</td><td>≤ 20%</td></tr>
+<tr><td>Recebimentos digitais</td><td>≥ 50%</td><td>≤ 10%</td></tr>
+<tr><td>Probabilidades da base</td><td>≥ 0,6</td><td>≤ 0,2</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Exemplo: com 5%, delivery marcava 25% dos escritórios; a mediana de vendas online é 0,47 em todas as atividades. Os cortes foram recalibrados.</p>
+</div>
+<div style="flex:2;display:flex;flex-direction:column;gap:24px">
+<div style="background:#002D72;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#FCFC30">Entre o sim e o não</h3>
+<p style="font-size:28px;line-height:1.45;color:#FFFFFF">o fato fica desconhecido. Ausência de dado nunca vira “não”.</p>
+</div>
+<div style="background:#F2F4FF;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Território pelo IBGE</h3>
+<p style="font-size:26px;line-height:1.45">CEP e coordenadas da base são fictícios e nunca são usados.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/batch/input_mapping.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">09 / 22</p>
+<aside>Como a base comum vira fatos. Campos cadastrais viram observados; valores que a base calcula, como estoque e despesas, viram derivados; probabilidades e índices viram estimados. Para transformar percentuais em sim ou não usamos limiares, e eles foram calibrados olhando a distribuição real: com o corte inicial de 5% de receita de delivery, um quarto dos escritórios aparecia como fazendo delivery. Entre o limiar do sim e o do não, o fato fica desconhecido e vira candidato a pergunta. Também decidimos não usar CEP nem coordenadas da base, que são fictícios: o território entra só pelo código IBGE do município.</aside>
+</section>

@@ -1,0 +1,33 @@
+<section id="exemplo" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · um caso real da base de teste</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">CASO_00001: um restaurante em São Paulo</h2>
+</div>
+<div style="display:flex;gap:32px;align-items:center;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#F2F4FF;border-radius:24px;padding:32px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Fatos</p>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Restaurante · CNAE 5611-2/03</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">10 a 49 empregados</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Delivery: 50% da receita</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Inquilino → protege o conteúdo</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">derivado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Mercadoria refrigerada, p = 0,71</p><p style="font-size:24px;color:#6B5200;background:#FFF4C2;padding:4px 14px;border-radius:999px">estimado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Roubo e alagamento médios</p><p style="font-size:24px;color:#6B5200;background:#FFF4C2;padding:4px 14px;border-radius:999px">estimado</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:64px;height:36px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px">
+<div style="background:#FCFC30;border-radius:20px;padding:28px 32px;display:flex;flex-direction:column;gap:6px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Plano Total</p>
+<p style="font-size:26px;color:#002D72">PLN-02: 10 ou mais empregados</p>
+</div>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Específicas:</b> Delivery R$ 10–30 mil · Deterioração de mercadorias R$ 3–30 mil (“uma falha de energia pode estragar o estoque”)</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Incêndio (básica):</b> R$ 200 mil – 1 mi</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Preliminar:</b> 4 impedimentos a confirmar, 6 perguntas</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Confiança 0,68</b> (faixas 0,65 · plano 0,70)</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · entrega/trace.jsonl.gz</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">17 / 22</p>
+<aside>Um caso real do trace de entrega. Restaurante em São Paulo, de 10 a 49 empregados, com metade da receita vinda de delivery, inquilino. A base dá uma probabilidade de 0,71 de usar refrigeração, que entra como estimado, e os dados públicos indicam roubo e alagamento médios. Resultado: PLN-02 leva ao plano Total pelo número de empregados. As coberturas específicas de delivery e de deterioração de mercadorias entram com faixas e com a justificativa em linguagem do cliente. Como inquilino, a cobertura básica protege o conteúdo, de 200 mil a 1 milhão. O caso sai preliminar porque quatro impedimentos não existem na base e viram perguntas, e a confiança é 0,68. Cada número desse slide está no trace e é reproduzível.</aside>
+</section>

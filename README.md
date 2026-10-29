@@ -17,6 +17,8 @@ Datathon Proteção Inteligente — desafio **Seguro Empresarial**.
 | `templates/metricas.json` | Métricas da execução sobre a base comum |
 | `templates/trace.jsonl.gz` | Rastro de cada decisão: fatos usados, regras acionadas e faixas calculadas |
 | `video_pitch.mp4` | Apresentação gravada (até 5 minutos) |
+| `apresentacao/negocio-de-pe-apresentacao.pdf` | Slides da apresentação (22 slides: front-end e, em detalhe, como o back-end usa os dados para recomendar) |
+| `apresentacao/apresentacao.html` | Mesmos slides para apresentar no navegador (← → navegam); `apresentacao/fonte/` traz os slides editáveis |
 
 ## Projetos
 

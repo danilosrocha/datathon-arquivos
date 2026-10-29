@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Negócio de Pé — Apresentação</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+  @page { size: 1920px 1080px; margin: 0; }
+  * { margin: 0; box-sizing: border-box; }
+  html, body { background: #1b2340; }
+  body { font-family: 'Inter', Arial, sans-serif; }
+  .frame { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; transform-origin: center; display: none; }
+  .frame.on { display: block; }
+  section { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+  h1 { font-size: 96px; font-weight: 600; line-height: 1.1; }
+  h2 { font-size: 64px; font-weight: 600; line-height: 1.15; }
+  h3 { font-size: 44px; font-weight: 600; line-height: 1.2; }
+  p { font-size: 32px; line-height: 1.4; }
+  table { border-collapse: separate; border-spacing: 0; width: 100%; overflow: hidden; }
+  th, td { padding: 0.35em 0.6em; text-align: left; border-bottom: 1px solid #DCE1F5; }
+  th { font-weight: 600; }
+  x-shape { display: block; flex: none; }
+  x-shape[kind="ellipse"] { border-radius: 50%; }
+  x-shape[kind="arrow-right"] { clip-path: polygon(0 30%, 60% 30%, 60% 0, 100% 50%, 60% 100%, 60% 70%, 0 70%); }
+  x-shape[kind="arrow-down"] { clip-path: polygon(30% 0, 70% 0, 70% 60%, 100% 60%, 50% 100%, 0 60%, 30% 60%); }
+  x-icon { display: none; }
+  #nav { position: fixed; right: 16px; bottom: 12px; color: #c6ceff; font: 14px Inter, sans-serif; }
+  @media print {
+    html, body { background: #fff; }
+    .frame { display: block !important; position: static; transform: none !important; break-after: page; }
+    #nav { display: none; }
+  }
+</style>
+</head>
+<body>
+<div class="frame"><section id="cover" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:16px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:480px;height:16px;background:#FCFC30"></div>
+<x-shape kind="ellipse" style="position:absolute;left:1200px;top:200px;width:620px;height:620px;background:#FCFC30"></x-shape>
+<img src="imagens/genio-apresentando.png" alt="Gênio BB, personagem ilustrado do produto, apontando para si com um sorriso" style="position:absolute;left:1040px;top:230px;width:880px;height:605px;object-fit:contain">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF;width:960px">Datathon Proteção Inteligente · Seguro Empresarial</p>
+<h1 style="font-family:'Poppins', Arial, sans-serif;font-size:120px;font-weight:700;line-height:1.05;color:#002D72;width:960px">Negócio de Pé</h1>
+<p style="font-size:44px;line-height:1.3;color:#33405C;width:900px">Recomendação explicável de Seguro Empresarial para pequenos negócios</p>
+<div style="width:120px;height:8px;background:#FCFC30;border-radius:4px"></div>
+<p style="font-size:28px;line-height:1.5;color:#5A6680;width:900px"><b>Equipe Xenga</b><br>Danilo da Silva Rocha · Marcus Vinicius Abrante · Aerton Pinheiro Marzagao</p>
+
+</section></div><div class="frame"><section id="problema" data-transition="fade" style="background:#FCFC30;color:#002D72;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#002D72">O problema</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:88px;font-weight:700;line-height:1.12;color:#002D72;width:1560px">Proteger uma empresa não deveria exigir que o empreendedor fosse especialista em seguros.</h2>
+<p style="font-size:36px;line-height:1.45;color:#1E2F5C;width:1400px">Formulários longos, siglas como IS e CNAE e nenhuma explicação de por que cada cobertura importa para <i>aquele</i> negócio.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#1E2F5C">Negócio de Pé · Equipe Xenga</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#1E2F5C">02 / 22</p>
+
+</section></div><div class="frame"><section id="solucao" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">A proposta</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">A jornada em quatro passos</h2>
+</div>
+<div style="display:flex;gap:32px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4FF;padding:40px;border-radius:24px;border-top:8px solid #465EFF">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1;color:#465EFF">1</p>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Conversa</h3>
+<p style="font-size:28px;line-height:1.45">O Gênio pergunta só o necessário, e cada pergunta explica o porquê.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4FF;padding:40px;border-radius:24px;border-top:8px solid #465EFF">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1;color:#465EFF">2</p>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Perfil</h3>
+<p style="font-size:28px;line-height:1.45">Cada dado vira um card com selo: Disponível, Estimado ou Confirmado. O cliente corrige.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#F2F4FF;padding:40px;border-radius:24px;border-top:8px solid #465EFF">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1;color:#465EFF">3</p>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Ofertas</h3>
+<p style="font-size:28px;line-height:1.45">Melhor ajuste e duas alternativas, com faixas de indenização e o “Por quê?” de cada cobertura.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFBC2;padding:40px;border-radius:24px;border-top:8px solid #E0C800">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1;color:#002D72">4</p>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Resumo para cotação</h3>
+<p style="font-size:28px;line-height:1.45">Campos na ordem do formulário oficial. Preço e contratação ficam no fluxo oficial.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Equipe Xenga</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">03 / 22</p>
+
+</section></div><div class="frame"><section id="front-jornada" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Front-end</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Uma conversa, não um formulário</h2>
+</div>
+<div style="display:flex;gap:56px;flex:1">
+<div style="width:1000px;display:grid;grid-template-columns:3fr 2fr;grid-template-rows:auto 1fr;gap:20px;background:#F2F4FF;padding:24px;border-radius:24px">
+<div style="background:#FFFFFF;border:2px solid #465EFF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;font-weight:700;color:#465EFF">QuestionBar</p>
+<p style="font-size:24px;line-height:1.35">Pergunta atual + resposta rápida: Sim/Não, CEP, faixa</p>
+</div>
+<div style="background:#FFFBC2;border:2px solid #E0C800;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;font-weight:700;color:#002D72">AvatarStage</p>
+<p style="font-size:24px;line-height:1.35">Gênio: ouvindo, pensando, comemorando</p>
+</div>
+<div style="background:#FFFFFF;border:1px solid #C9D0F2;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;font-weight:700;color:#002D72">ChatPanel</p>
+<p style="font-size:24px;line-height:1.35">Resposta livre em texto, com a fala do assistente chegando em streaming</p>
+</div>
+<div style="background:#FFFFFF;border:1px solid #C9D0F2;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:700;color:#002D72">ProfileCards</p>
+<p style="font-size:24px;background:#E3F6EC;color:#14532D;padding:6px 14px;border-radius:999px">Confirmado</p>
+<p style="font-size:24px;background:#E5E8FF;color:#26338F;padding:6px 14px;border-radius:999px">Disponível</p>
+<p style="font-size:24px;background:#FFF4C2;color:#6B5200;padding:6px 14px;border-radius:999px">Estimado</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px;justify-content:center">
+<p style="font-size:30px;line-height:1.45"><b style="color:#002D72">Responder por botão ou por texto.</b> Os dois caminhos geram o mesmo fato no back.</p>
+<p style="font-size:30px;line-height:1.45"><b style="color:#002D72">Selo de origem em cada card.</b> O cliente vê o que veio da Receita, o que é estimativa e o que ele confirmou.</p>
+<p style="font-size:30px;line-height:1.45"><b style="color:#002D72">A palavra final é do cliente.</b> Editar, confirmar ou remover, com “Desfazer” por 5 s.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Front-end</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">04 / 22</p>
+
+</section></div><div class="frame"><section id="front-tecnica" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Front-end</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Como o front foi construído</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px;flex:1">
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Code" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Stack</h3>
+<p style="font-size:26px;line-height:1.4">Next.js (App Router), TypeScript estrito, Tailwind, shadcn/ui e Motion. Deploy na Vercel.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Lightning" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Tempo real (SSE)</h3>
+<p style="font-size:26px;line-height:1.4">Parser próprio sobre fetch para enviar o X-Case-Token; reconecta com Last-Event-ID.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Settings" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Estado do caso</h3>
+<p style="font-size:26px;line-height:1.4">Um useReducer alimentado pelos eventos do servidor. Sem Zustand, sem TanStack Query.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Link" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Contrato tipado</h3>
+<p style="font-size:26px;line-height:1.4">Tipos REST gerados do OpenAPI do back; eventos SSE espelham o contrato.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Play" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Modo demonstração</h3>
+<p style="font-size:26px;line-height:1.4">Transporte mock com o mesmo contrato: o front andou antes do back e a demo sobrevive sem API.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;padding:32px;border:1px solid #DCE1F5;border-radius:20px">
+<x-icon name="Users" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Acessibilidade</h3>
+<p style="font-size:26px;line-height:1.4">Contraste AA, teclado nos cards, aria-live no chat, reduced-motion, a partir de 360 px.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Front-end</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">05 / 22</p>
+
+</section></div><div class="frame"><section id="back-principio" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · princípio</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Toda decisão é determinística e rastreável</h2>
+</div>
+<div style="background:#002D72;border-radius:24px;padding:48px 56px;display:flex;flex-direction:column;gap:12px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;color:#FFFFFF;line-height:1.2">decisão = f( <span style="color:#FCFC30">fatos</span>, <span style="color:#FCFC30">versão das regras</span>, <span style="color:#FCFC30">versão do grafo</span> )</p>
+<p style="font-size:28px;color:#C6CEFF">Mesmos dados de entrada → mesma recomendação, com o mesmo hash.</p>
+</div>
+<div style="display:flex;gap:32px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#F2F4FF;padding:40px;border-radius:24px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#465EFF">IA (Claude) conduz a conversa</h3>
+<p style="font-size:28px;line-height:1.45">Extrai fatos do texto livre, redige a pergunta que o motor escolheu e reescreve a explicação, que passa por um validador.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFBC2;padding:40px;border-radius:24px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Regras de negócio decidem</h3>
+<p style="font-size:28px;line-height:1.45">Elegibilidade, plano, coberturas e faixas de indenização saem do motor. Nenhum campo de decisão vem do modelo.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">06 / 22</p>
+
+</section></div><div class="frame"><section id="back-arquitetura" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · arquitetura</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Dos dados à recomendação</h2>
+</div>
+<div style="display:flex;gap:20px;align-items:center;flex:1">
+<div style="width:330px;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5A6680">Entradas</p>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Base comum</p>
+<p style="font-size:24px;line-height:1.35">Empresa + estabelecimento</p>
+</div>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Conversa</p>
+<p style="font-size:24px;line-height:1.35">LLM extrai fatos do texto</p>
+</div>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Dados públicos</p>
+<p style="font-size:24px;line-height:1.35">Risco por município e UF</p>
+</div>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="width:300px;display:flex;flex-direction:column;gap:12px;background:#465EFF;border-radius:20px;padding:32px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:700;color:#FFFFFF">Fatos</p>
+<p style="font-size:24px;line-height:1.4;color:#FFFFFF">Valor + natureza + origem + confiança</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="width:380px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FCFC30;border-radius:20px;padding:32px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:700;color:#002D72">Motor</p>
+<p style="font-size:24px;line-height:1.4;color:#002D72">Funções puras: elegibilidade, plano, coberturas, faixas</p>
+</div>
+<div style="border:2px dashed #465EFF;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:4px">
+<p style="font-size:24px;font-weight:700;color:#002D72">Catálogo oficial</p>
+<p style="font-size:24px;line-height:1.35">YAML versionado</p>
+</div>
+<div style="border:2px dashed #465EFF;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:4px">
+<p style="font-size:24px;font-weight:700;color:#002D72">Context graph</p>
+<p style="font-size:24px;line-height:1.35">Priors por CNAE</p>
+</div>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5A6680">Saídas</p>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">2 templates</b> oficiais (CSV)</p>
+</div>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">Trace</b> e métricas</p>
+</div>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">API</b> → front via SSE</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · Python 3.12 · FastAPI · LangGraph · Postgres (Supabase)</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">07 / 22</p>
+
+</section></div><div class="frame"><section id="fatos" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · dados</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Todo dado vira um fato, com natureza e confiança</h2>
+</div>
+<table style="font-size:28px;color:#33405C;border:1px solid #DCE1F5;border-radius:16px">
+<tr style="background:#002D72"><th style="width:18%;color:#FFFFFF;padding:18px 24px">Natureza</th><th style="width:44%;color:#FFFFFF">De onde vem (exemplos)</th><th style="width:14%;color:#FFFFFF;text-align:center">Peso</th><th style="width:24%;color:#FFFFFF">Selo no front</th></tr>
+<tr><td><b>confirmado</b></td><td>O cliente respondeu ou confirmou o card</td><td style="text-align:center">1,0</td><td>Confirmado</td></tr>
+<tr style="background:#F2F4FF"><td><b>observado</b></td><td>Campos cadastrais: CNAE, empregados, município</td><td style="text-align:center">0,8</td><td>Disponível</td></tr>
+<tr><td><b>derivado</b></td><td>Recalculável por fórmula: estoque, despesas fixas, bens</td><td style="text-align:center">0,7</td><td>Disponível</td></tr>
+<tr style="background:#F2F4FF"><td><b>estimado</b></td><td>Probabilidades, índices e risco regional</td><td style="text-align:center">0,4</td><td>Estimado</td></tr>
+<tr><td><b>rejeitado</b></td><td>Removido pelo cliente: sai do caso</td><td style="text-align:center">—</td><td>Não aparece</td></tr>
+</table>
+<div style="display:flex;gap:24px;align-items:center;background:#FFFBC2;border-radius:16px;padding:24px 32px">
+<x-icon name="Lightbulb" style="color:#002D72;width:44px;height:44px"></x-icon>
+<p style="font-size:28px;line-height:1.4;color:#002D72">Peso de cada entrada = mín(peso da natureza, qualidade declarada na base: ALTA 0,9 · MÉDIA 0,6 · BAIXA 0,3).</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/domain/facts.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">08 / 22</p>
+
+</section></div><div class="frame"><section id="base-comum" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · base comum</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Limiares calibrados na distribuição real</h2>
+</div>
+<div style="display:flex;gap:48px;flex:1">
+<div style="flex:3;display:flex;flex-direction:column;gap:20px">
+<table style="font-size:26px;color:#33405C">
+<tr style="background:#F2F4FF"><th style="width:34%;color:#002D72;padding:14px 20px">Sinal da base</th><th style="width:33%;color:#002D72">Vira “sim”</th><th style="width:33%;color:#002D72">Vira “não”</th></tr>
+<tr><td>Receita de delivery</td><td>≥ 15%</td><td>—</td></tr>
+<tr><td>Vendas online</td><td>≥ 60%</td><td>≤ 20%</td></tr>
+<tr><td>Recebimentos digitais</td><td>≥ 50%</td><td>≤ 10%</td></tr>
+<tr><td>Probabilidades da base</td><td>≥ 0,6</td><td>≤ 0,2</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Exemplo: com 5%, delivery marcava 25% dos escritórios; a mediana de vendas online é 0,47 em todas as atividades. Os cortes foram recalibrados.</p>
+</div>
+<div style="flex:2;display:flex;flex-direction:column;gap:24px">
+<div style="background:#002D72;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#FCFC30">Entre o sim e o não</h3>
+<p style="font-size:28px;line-height:1.45;color:#FFFFFF">o fato fica desconhecido. Ausência de dado nunca vira “não”.</p>
+</div>
+<div style="background:#F2F4FF;border-radius:20px;padding:36px;display:flex;flex-direction:column;gap:12px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Território pelo IBGE</h3>
+<p style="font-size:26px;line-height:1.45">CEP e coordenadas da base são fictícios e nunca são usados.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/batch/input_mapping.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">09 / 22</p>
+
+</section></div><div class="frame"><section id="dados-externos" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · dados públicos</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Enriquecimento: o risco da região</h2>
+</div>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<x-icon name="Cloud" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Atlas Digital de Desastres</h3>
+<p style="font-size:26px;line-height:1.4">Vendaval, granizo e alagamento por município. Reconhecimentos 2003–2016: 0 baixo · 1–2 médio · 3+ alto.</p>
+<p style="font-size:24px;font-weight:600;color:#465EFF">4.213 municípios</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<x-icon name="Lock" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Criminalidade por UF</h3>
+<p style="font-size:26px;line-height:1.4">Mediana 2018–2023 de roubos por 100 mil habitantes, em tercis entre as UFs.</p>
+<p style="font-size:24px;font-weight:600;color:#465EFF">27 UFs</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<x-icon name="Globe" style="color:#465EFF;width:48px;height:48px"></x-icon>
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">ViaCEP</h3>
+<p style="font-size:26px;line-height:1.4">Na jornada web, o CEP que o cliente digita vira município e, daí, risco regional.</p>
+<p style="font-size:24px;font-weight:600;color:#465EFF">Sob demanda, com cache</p>
+</div>
+</div>
+<div style="display:flex;gap:24px;align-items:center;background:#FFFBC2;border-radius:16px;padding:28px 32px">
+<x-icon name="Warning" style="color:#002D72;width:44px;height:44px"></x-icon>
+<p style="font-size:28px;line-height:1.4;color:#002D72"><b>Risco regional sempre entra como estimado (0,3).</b> Nunca decide elegibilidade; pode subir o plano e vira pergunta de confirmação.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · data/risco_municipio.csv · data/risco_uf.csv</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">10 / 22</p>
+
+</section></div><div class="frame"><section id="grafo" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · context graph</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">O que a atividade costuma ter, e a que expõe</h2>
+</div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Atividade</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">CNAE 56 · alimentação</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Característica</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Mercadoria refrigerada</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Risco · peso</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Deterioração 0,9 · dano elétrico 0,7</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#FCFC30;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#002D72">Dimensão</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Conteúdo</p>
+</div>
+</div>
+<div style="display:flex;gap:28px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Priors treinados na base</h3>
+<p style="font-size:26px;line-height:1.4">Beta(α, β) por CNAE: α = 1 + sim, β = 1 + não. Subclasse sem dados recua para a divisão.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Hipótese, não fato</h3>
+<p style="font-size:26px;line-height:1.4">p(característica | CNAE) ≥ 0,8 e nada no caso → hipótese, que vira pergunta de confirmação.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Força da necessidade</h3>
+<p style="font-size:26px;line-height:1.4">p × peso da exposição. Define prioridade por dimensão: imóvel, conteúdo, caixa, terceiros, cyber.</p>
+</div>
+</div>
+<p style="font-size:26px;color:#5A6680"><b style="color:#002D72">11</b> características · <b style="color:#002D72">396</b> priors · <b style="color:#002D72">8</b> divisões CNAE · <b style="color:#002D72">423</b> arestas na versão treinada (kg_version 2)</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/graph/ (NetworkX)</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">11 / 22</p>
+
+</section></div><div class="frame"><section id="motor" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<x-shape kind="ellipse" style="position:absolute;left:1340px;top:330px;width:440px;height:440px;background:#FFFBC2"></x-shape>
+<img src="imagens/genio-pensando.png" alt="Gênio BB pensativo" style="position:absolute;left:1240px;top:340px;width:600px;height:413px;object-fit:contain">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · motor</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">O motor em sete passos</h2>
+</div>
+<div style="width:1100px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">1</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Fatos derivados:</b> atividade aceita e rural pelo CNAE; IS básica estimada</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">2</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Elegibilidade</b> em lógica de três valores</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">3</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Hipóteses do grafo</b> com p ≥ 0,8</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">4</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Necessidades:</b> característica → risco → dimensão</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">5</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Três ofertas</b> validadas contra o catálogo</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF;background:#465EFF;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">6</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Faixas de IS</b> por regras EST-*, com confiança e “o que confirmar”</p></div>
+<div style="display:flex;gap:24px;align-items:center"><p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#002D72;background:#FCFC30;width:56px;height:56px;border-radius:28px;text-align:center;line-height:1.75">7</p><p style="font-size:28px;line-height:1.35"><b style="color:#002D72">Textos, resumo para cotação</b> e cards de personalização</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/engine/decide.py · funções puras, sem rede e sem relógio</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">12 / 22</p>
+
+</section></div><div class="frame"><section id="elegibilidade" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · elegibilidade</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Três valores: sim, não e desconhecido</h2>
+</div>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border:2px solid #002D72;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Algum impedimento é <b>verdadeiro</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#002D72"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Inelegível</p>
+<p style="font-size:26px;line-height:1.4">Motivo e próximo passo, sem ofertas</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFBC2;border:2px solid #E0C800;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Algum impedimento é <b>desconhecido</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#002D72"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Pendente</p>
+<p style="font-size:26px;line-height:1.4">Recomendação preliminar + perguntas de confirmação</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#F2F4FF;border:2px solid #465EFF;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Todos os impedimentos são <b>falsos</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#465EFF"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#465EFF">Elegível</p>
+<p style="font-size:26px;line-height:1.4">Recomendação completa</p>
+</div>
+</div>
+<div style="display:flex;gap:28px">
+<p style="flex:1;font-size:28px;line-height:1.45"><b style="color:#002D72">Fato estimado conta como desconhecido.</b> Uma probabilidade nunca reprova ninguém.</p>
+<p style="flex:1;font-size:28px;line-height:1.45"><b style="color:#002D72">Impedimentos sem campo na base</b> (área restrita, imóvel tombado, já segurado na BB) viram perguntas.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/engine/eligibility.py · catalog/elegibilidade.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">13 / 22</p>
+
+</section></div><div class="frame"><section id="plano" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · plano e ofertas</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Regras escolhem o plano mínimo; vence o mais alto</h2>
+</div>
+<div style="display:flex;gap:48px;flex:1">
+<div style="flex:3;display:flex;flex-direction:column;gap:20px">
+<table style="font-size:26px;color:#33405C">
+<tr style="background:#F2F4FF"><th style="width:18%;color:#002D72;padding:14px 20px">Regra</th><th style="width:58%;color:#002D72">Se o caso tem…</th><th style="width:24%;color:#002D72">Plano mínimo</th></tr>
+<tr><td><b>PLN-01</b></td><td>Risco médio/alto de vendaval, granizo ou roubo, ou estoque</td><td>Prático</td></tr>
+<tr><td><b>PLN-02</b></td><td>Fachada de vidro ou 10+ empregados</td><td>Total</td></tr>
+<tr><td><b>PLN-ESP</b></td><td>Cobertura específica da atividade se aplica</td><td>Prático</td></tr>
+<tr><td>—</td><td>Nenhuma regra acionada</td><td>Essencial</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Coberturas por bloco: 6 fixas em todos os planos · padrão do plano · específicas (delivery, refrigeração, valores, home office) · opcionais.</p>
+</div>
+<div style="flex:2;display:flex;flex-direction:column;gap:20px">
+<div style="background:#465EFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF">Melhor ajuste</p>
+<p style="font-size:26px;color:#FFFFFF">O plano mínimo das regras</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Custo-benefício</p>
+<p style="font-size:26px">Um plano abaixo</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Proteção ampliada</p>
+<p style="font-size:26px">Um plano acima</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · catalog/recomendacao.yaml · catalog/planos.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">14 / 22</p>
+
+</section></div><div class="frame"><section id="faixas" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · faixas de indenização</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Faixas de IS, cada uma com sua confiança</h2>
+</div>
+<div style="display:flex;gap:64px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:24px">
+<p style="font-size:28px;line-height:1.45"><b style="color:#002D72">IS (importância segurada)</b> é a indenização máxima. Cada cobertura tem uma regra EST-* que transforma fatos em faixa “R$ mín. – R$ máx.”.</p>
+<div style="display:flex;flex-direction:column;gap:12px;background:#F2F4FF;border-radius:20px;padding:32px">
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Básica:</b> soma de prédio e/ou conteúdo, de R$ 100 mil a R$ 7,5 mi</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Proporcional, tabela, contagem, fontes:</b> a primeira base disponível no caso</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">IS sugerida:</b> ponto médio, arredondado para baixo a R$ 5 mil</p>
+</div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:28px;line-height:1.45">Confiança da faixa = média do peso de cada entrada usada:</p>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">confirmado</p><div style="width:520px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">1,0</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">observado</p><div style="width:416px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,8</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">derivado</p><div style="width:364px;height:40px;background:#465EFF;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,7</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">estimado</p><div style="width:208px;height:40px;background:#E0C800;border-radius:6px"></div><p style="font-size:26px;font-weight:700;color:#002D72">0,4</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">vaga vazia</p><div style="width:4px;height:40px;background:#9AA3BD"></div><p style="font-size:26px;font-weight:700;color:#002D72">0</p></div>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Confiança geral = média(faixas, plano). Sobe à medida que o cliente confirma os cards.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · catalog/estimativas.yaml · 17 regras EST-*</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">15 / 22</p>
+
+</section></div><div class="frame"><section id="pergunta" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · a pergunta certa</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Perguntar só o que muda a recomendação</h2>
+</div>
+<div style="background:#002D72;border-radius:24px;padding:40px 56px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:44px;font-weight:600;color:#FFFFFF;line-height:1.3">score(k) = <span style="color:#FCFC30">1000</span> · [decide elegibilidade] + <span style="color:#FCFC30">impacto</span> × <span style="color:#FCFC30">incerteza</span> − <span style="color:#FCFC30">custo</span></p>
+</div>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Impacto</h3>
+<p style="font-size:26px;line-height:1.4">Coberturas que mudam se k for sim ou não. Contrafactual: o motor roda duas vezes.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Incerteza</h3>
+<p style="font-size:26px;line-height:1.4">1 − |2p − 1|, com p do grafo ou da estimativa. Máxima em p = 0,5.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-top:8px solid #465EFF;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Custo</h3>
+<p style="font-size:26px;line-height:1.4">0 para sim/não · 0,2 para seleção · 0,5 para número ou texto.</p>
+</div>
+</div>
+<p style="font-size:28px;line-height:1.45"><b style="color:#002D72">Para quando</b> o caso é inelegível, não há elegibilidade em aberto e nenhum fato restante muda a oferta, ou depois de 15 perguntas.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/engine/questions.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">16 / 22</p>
+
+</section></div><div class="frame"><section id="exemplo" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · um caso real da base de teste</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">CASO_00001: um restaurante em São Paulo</h2>
+</div>
+<div style="display:flex;gap:32px;align-items:center;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;background:#F2F4FF;border-radius:24px;padding:32px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Fatos</p>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Restaurante · CNAE 5611-2/03</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">10 a 49 empregados</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Delivery: 50% da receita</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">observado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Inquilino → protege o conteúdo</p><p style="font-size:24px;color:#26338F;background:#E5E8FF;padding:4px 14px;border-radius:999px">derivado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Mercadoria refrigerada, p = 0,71</p><p style="font-size:24px;color:#6B5200;background:#FFF4C2;padding:4px 14px;border-radius:999px">estimado</p></div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:16px"><p style="font-size:26px">Roubo e alagamento médios</p><p style="font-size:24px;color:#6B5200;background:#FFF4C2;padding:4px 14px;border-radius:999px">estimado</p></div>
+</div>
+<x-shape kind="arrow-right" style="width:64px;height:36px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px">
+<div style="background:#FCFC30;border-radius:20px;padding:28px 32px;display:flex;flex-direction:column;gap:6px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Plano Total</p>
+<p style="font-size:26px;color:#002D72">PLN-02: 10 ou mais empregados</p>
+</div>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Específicas:</b> Delivery R$ 10–30 mil · Deterioração de mercadorias R$ 3–30 mil (“uma falha de energia pode estragar o estoque”)</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Incêndio (básica):</b> R$ 200 mil – 1 mi</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Preliminar:</b> 4 impedimentos a confirmar, 6 perguntas</p>
+<p style="font-size:26px;line-height:1.4"><b style="color:#002D72">Confiança 0,68</b> (faixas 0,65 · plano 0,70)</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · entrega/trace.jsonl.gz</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">17 / 22</p>
+
+</section></div><div class="frame"><section id="agentes" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · jornada conversacional</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">A cada mensagem, um ciclo LangGraph</h2>
+</div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="flex:1;border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">extract</p>
+<p style="font-size:24px;line-height:1.35">LLM rápido: texto livre → fatos</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">enrich</p>
+<p style="font-size:24px;line-height:1.35">CEP → município → risco regional</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#FCFC30;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">reason</p>
+<p style="font-size:24px;line-height:1.35;color:#002D72">Motor: decide e escolhe a pergunta</p>
+</div>
+<x-shape kind="arrow-right" style="width:44px;height:26px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<div style="border:2px solid #465EFF;border-radius:20px;padding:20px 28px;display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">ask</p>
+<p style="font-size:24px;line-height:1.35">LLM redige a pergunta</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:20px 28px;display:flex;flex-direction:column;gap:4px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#465EFF">explain</p>
+<p style="font-size:24px;line-height:1.35">LLM + validador explicam</p>
+</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">API FastAPI</h3>
+<p style="font-size:24px;line-height:1.4">Caso anônimo com X-Case-Token. Comandos respondem 202; o resultado chega por SSE.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">Postgres (Supabase)</h3>
+<p style="font-size:24px;line-height:1.4">Casos, fatos, recomendações e auditoria append-only.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;background:#F2F4FF;border-radius:20px;padding:28px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:28px;font-weight:600;color:#002D72">Grafo que aprende</h3>
+<p style="font-size:24px;line-height:1.4">Fatos confirmados geram nova versão do grafo, publicada para os próximos casos.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/agents/profiling/graph.py</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">18 / 22</p>
+
+</section></div><div class="frame"><section id="resultados" data-transition="fade" style="background:#F2F4FF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Resultados · base comum de teste</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">144 casos, nenhuma regra violada</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px;flex:1">
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#465EFF;line-height:1.1">100%</p>
+<p style="font-size:26px;line-height:1.35">casos processados, 0% de falhas</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#465EFF;line-height:1.1">0</p>
+<p style="font-size:26px;line-height:1.35">violações de elegibilidade</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#465EFF;line-height:1.1">0</p>
+<p style="font-size:26px;line-height:1.35">inconsistências plano × coberturas</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#465EFF;line-height:1.1">100%</p>
+<p style="font-size:26px;line-height:1.35">recomendações com justificativa</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#002D72;line-height:1.1">0,8 s</p>
+<p style="font-size:26px;line-height:1.35">para os 144 casos (≈ 7 s para 2.978)</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#002D72;line-height:1.1">5,5</p>
+<p style="font-size:26px;line-height:1.35">perguntas de confirmação por caso</p>
+</div>
+<div style="background:#FFFFFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#002D72;line-height:1.1">100%</p>
+<p style="font-size:26px;line-height:1.35">estabilidade a atributos irrelevantes</p>
+</div>
+<div style="background:#FCFC30;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:72px;font-weight:700;color:#002D72;line-height:1.1">Hash</p>
+<p style="font-size:26px;line-height:1.35;color:#002D72">idêntico em execuções repetidas</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1200px;font-size:24px;color:#5A6680">Negócio de Pé · entrega/metricas.json · regras 2026-10-28.1 · sem LLM e sem rede no lote</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">19 / 22</p>
+
+</section></div><div class="frame"><section id="distribuicao" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Resultados · distribuição</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">A maioria precisa do Prático; a confiança acompanha o plano</h2>
+</div>
+<div style="display:flex;gap:80px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Recomendação · 144 casos</h3>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Prático</p><div style="width:560px;height:48px;background:#465EFF;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">88</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Total</p><div style="width:299px;height:48px;background:#465EFF;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">47</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Inelegível</p><div style="width:38px;height:48px;background:#E0C800;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">6</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Essencial</p><div style="width:19px;height:48px;background:#465EFF;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">3</p></div>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">138 elegíveis sujeitos a confirmação; 6 inelegíveis por imóvel em obra (ELG-004).</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:600;color:#002D72">Confiança média por plano</h3>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Total</p><div style="width:375px;height:48px;background:#002D72;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">0,67</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Prático</p><div style="width:330px;height:48px;background:#002D72;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">0,59</p></div>
+<div style="display:flex;align-items:center;gap:20px"><p style="width:200px;font-size:26px">Essencial</p><div style="width:185px;height:48px;background:#002D72;border-radius:6px"></div><p style="font-size:28px;font-weight:700;color:#002D72">0,33</p></div>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Média geral 0,61. O Essencial fica baixo porque a base nunca informa fachada de vidro: a regra do Total não pode ser descartada.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · entrega/metricas.json · escala de 0 a 1</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">20 / 22</p>
+
+</section></div><div class="frame"><section id="limitacoes" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Transparência</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Limitações e próximos passos</h2>
+</div>
+<div style="display:flex;gap:40px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:22px;border:1px solid #DCE1F5;border-radius:24px;padding:40px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:34px;font-weight:600;color:#002D72">O que sabemos que falta</h3>
+<p style="font-size:26px;line-height:1.45">Três impedimentos não existem na base: todo caso sem impedimento sai “sujeito a confirmação”.</p>
+<p style="font-size:26px;line-height:1.45">No lote, nenhum caso chega a confiança alta (≥ 0,75): a base não tem dado confirmado.</p>
+<p style="font-size:26px;line-height:1.45">Roubo só por UF; clima depende de reconhecimentos oficiais.</p>
+<p style="font-size:26px;line-height:1.45">Faixas de entrada largas geram faixas de saída largas. Nenhum preço é calculado.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:22px;background:#F2F4FF;border-radius:24px;padding:40px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:34px;font-weight:600;color:#465EFF">Para onde vamos</h3>
+<p style="font-size:26px;line-height:1.45">Na jornada web, cada card confirmado sobe a confiança do caso.</p>
+<p style="font-size:26px;line-height:1.45">Calibrar as regras EST-* e os limiares com dados reais de sinistro e contratação.</p>
+<p style="font-size:26px;line-height:1.45">Grafo que aprende: fatos confirmados viram nova versão de priors.</p>
+<p style="font-size:26px;line-height:1.45">Integrar o Resumo para cotação ao fluxo oficial e incluir a atividade do formulário.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Equipe Xenga</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">21 / 22</p>
+
+</section></div><div class="frame"><section id="fim" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:16px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:480px;height:16px;background:#FCFC30"></div>
+<x-shape kind="ellipse" style="position:absolute;left:1200px;top:220px;width:600px;height:600px;background:#E5E8FF"></x-shape>
+<img src="imagens/genio-comemorando.png" alt="Gênio BB comemorando" style="position:absolute;left:1040px;top:240px;width:880px;height:605px;object-fit:contain">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF;width:960px">Negócio de Pé</p>
+<h1 style="font-family:'Poppins', Arial, sans-serif;font-size:88px;font-weight:700;line-height:1.12;color:#002D72;width:960px">Seu negócio merece continuar de pé.</h1>
+<p style="font-size:36px;line-height:1.4;color:#33405C;width:900px">A IA conduz a conversa. As regras decidem. O cliente tem a palavra final.</p>
+<div style="width:120px;height:8px;background:#FCFC30;border-radius:4px"></div>
+<p style="font-size:28px;line-height:1.5;color:#5A6680;width:900px"><b>Obrigado!</b> · Equipe Xenga<br>Danilo da Silva Rocha · Marcus Vinicius Abrante · Aerton Pinheiro Marzagao</p>
+
+</section></div>
+<div id="nav"></div>
+<script>
+  const frames = [...document.querySelectorAll('.frame')];
+  let i = Math.max(0, Math.min(frames.length - 1, (parseInt(location.hash.slice(1)) || 1) - 1));
+  function fit() {
+    const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    frames.forEach(f => f.style.transform = `translate(-50%, -50%) scale(${s})`);
+  }
+  function show(n) {
+    i = Math.max(0, Math.min(frames.length - 1, n));
+    frames.forEach((f, k) => f.classList.toggle('on', k === i));
+    document.getElementById('nav').textContent = `${i + 1} / ${frames.length} · ← → para navegar`;
+    history.replaceState(null, '', '#' + (i + 1));
+  }
+  addEventListener('resize', fit);
+  addEventListener('keydown', e => {
+    if (['ArrowRight', 'PageDown', ' '].includes(e.key)) show(i + 1);
+    if (['ArrowLeft', 'PageUp'].includes(e.key)) show(i - 1);
+  });
+  addEventListener('click', e => show(e.clientX > innerWidth / 2 ? i + 1 : i - 1));
+  fit(); show(i);
+</script>
+</body>
+</html>

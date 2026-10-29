@@ -1,0 +1,47 @@
+<section id="grafo" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · context graph</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">O que a atividade costuma ter, e a que expõe</h2>
+</div>
+<div style="display:flex;gap:16px;align-items:center">
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Atividade</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">CNAE 56 · alimentação</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Característica</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Mercadoria refrigerada</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#465EFF">Risco · peso</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Deterioração 0,9 · dano elétrico 0,7</p>
+</div>
+<x-shape kind="arrow-right" style="width:48px;height:28px;background:#465EFF"></x-shape>
+<div style="flex:1;background:#FCFC30;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#002D72">Dimensão</p>
+<p style="font-size:28px;font-weight:600;color:#002D72">Conteúdo</p>
+</div>
+</div>
+<div style="display:flex;gap:28px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Priors treinados na base</h3>
+<p style="font-size:26px;line-height:1.4">Beta(α, β) por CNAE: α = 1 + sim, β = 1 + não. Subclasse sem dados recua para a divisão.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Hipótese, não fato</h3>
+<p style="font-size:26px;line-height:1.4">p(característica | CNAE) ≥ 0,8 e nada no caso → hipótese, que vira pergunta de confirmação.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;border:1px solid #DCE1F5;border-radius:20px;padding:32px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Força da necessidade</h3>
+<p style="font-size:26px;line-height:1.4">p × peso da exposição. Define prioridade por dimensão: imóvel, conteúdo, caixa, terceiros, cyber.</p>
+</div>
+</div>
+<p style="font-size:26px;color:#5A6680"><b style="color:#002D72">11</b> características · <b style="color:#002D72">396</b> priors · <b style="color:#002D72">8</b> divisões CNAE · <b style="color:#002D72">423</b> arestas na versão treinada (kg_version 2)</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/graph/ (NetworkX)</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">11 / 22</p>
+<aside>O context graph liga atividade, característica operacional, risco e dimensão de proteção. Treinamos os priors na base de desenvolvimento: para cada subclasse CNAE contamos quantas empresas têm cada característica, com peso cheio para dado observado e peso 0,3 para derivado ou estimado, e quando a subclasse tem poucos dados recuamos para a divisão. Quando a probabilidade passa de 0,8 e o caso não tem o fato, o grafo gera uma hipótese, que nunca é tratada como verdade: ela vira pergunta. A força de cada necessidade é a probabilidade vezes o peso da exposição. O grafo é versionado; fatos confirmados na jornada podem gerar uma nova versão.</aside>
+</section>

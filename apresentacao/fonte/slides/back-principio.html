@@ -1,0 +1,25 @@
+<section id="back-principio" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · princípio</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Toda decisão é determinística e rastreável</h2>
+</div>
+<div style="background:#002D72;border-radius:24px;padding:48px 56px;display:flex;flex-direction:column;gap:12px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:56px;font-weight:600;color:#FFFFFF;line-height:1.2">decisão = f( <span style="color:#FCFC30">fatos</span>, <span style="color:#FCFC30">versão das regras</span>, <span style="color:#FCFC30">versão do grafo</span> )</p>
+<p style="font-size:28px;color:#C6CEFF">Mesmos dados de entrada → mesma recomendação, com o mesmo hash.</p>
+</div>
+<div style="display:flex;gap:32px;flex:1">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#F2F4FF;padding:40px;border-radius:24px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#465EFF">IA (Claude) conduz a conversa</h3>
+<p style="font-size:28px;line-height:1.45">Extrai fatos do texto livre, redige a pergunta que o motor escolheu e reescreve a explicação, que passa por um validador.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFBC2;padding:40px;border-radius:24px">
+<h3 style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:600;color:#002D72">Regras de negócio decidem</h3>
+<p style="font-size:28px;line-height:1.45">Elegibilidade, plano, coberturas e faixas de indenização saem do motor. Nenhum campo de decisão vem do modelo.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">06 / 22</p>
+<aside>Este é o princípio que guia todo o back. A recomendação é uma função pura dos fatos do caso, da versão das regras do catálogo e da versão do context graph. Isso permite auditar e reproduzir qualquer decisão. O modelo de linguagem fica restrito a linguagem: entender o que o cliente escreveu e escrever perguntas e explicações. Ele nunca decide se o cliente é elegível, qual plano ou quanto de indenização. O processamento em lote da base comum nem usa LLM.</aside>
+</section>

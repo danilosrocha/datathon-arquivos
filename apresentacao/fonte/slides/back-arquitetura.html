@@ -1,0 +1,61 @@
+<section id="back-arquitetura" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · arquitetura</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Dos dados à recomendação</h2>
+</div>
+<div style="display:flex;gap:20px;align-items:center;flex:1">
+<div style="width:330px;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5A6680">Entradas</p>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Base comum</p>
+<p style="font-size:24px;line-height:1.35">Empresa + estabelecimento</p>
+</div>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Conversa</p>
+<p style="font-size:24px;line-height:1.35">LLM extrai fatos do texto</p>
+</div>
+<div style="background:#F2F4FF;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:6px">
+<p style="font-size:26px;font-weight:700;color:#002D72">Dados públicos</p>
+<p style="font-size:24px;line-height:1.35">Risco por município e UF</p>
+</div>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="width:300px;display:flex;flex-direction:column;gap:12px;background:#465EFF;border-radius:20px;padding:32px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:700;color:#FFFFFF">Fatos</p>
+<p style="font-size:24px;line-height:1.4;color:#FFFFFF">Valor + natureza + origem + confiança</p>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="width:380px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FCFC30;border-radius:20px;padding:32px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:36px;font-weight:700;color:#002D72">Motor</p>
+<p style="font-size:24px;line-height:1.4;color:#002D72">Funções puras: elegibilidade, plano, coberturas, faixas</p>
+</div>
+<div style="border:2px dashed #465EFF;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:4px">
+<p style="font-size:24px;font-weight:700;color:#002D72">Catálogo oficial</p>
+<p style="font-size:24px;line-height:1.35">YAML versionado</p>
+</div>
+<div style="border:2px dashed #465EFF;border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:4px">
+<p style="font-size:24px;font-weight:700;color:#002D72">Context graph</p>
+<p style="font-size:24px;line-height:1.35">Priors por CNAE</p>
+</div>
+</div>
+<x-shape kind="arrow-right" style="width:56px;height:32px;background:#465EFF"></x-shape>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#5A6680">Saídas</p>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">2 templates</b> oficiais (CSV)</p>
+</div>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">Trace</b> e métricas</p>
+</div>
+<div style="border:1px solid #DCE1F5;border-radius:16px;padding:24px">
+<p style="font-size:26px;line-height:1.35"><b style="color:#002D72">API</b> → front via SSE</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · Python 3.12 · FastAPI · LangGraph · Postgres (Supabase)</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">07 / 22</p>
+<aside>Visão geral. Três fontes de entrada: a base comum do desafio, a conversa com o cliente e dados públicos de risco regional. Tudo é convertido numa única representação, o fato, que carrega o valor, a natureza, a origem e a confiança. O motor lê os fatos, consulta o catálogo oficial em YAML versionado e o context graph, e produz a decisão. A mesma decisão alimenta os templates do desafio, o trace de auditoria e a API que o front consome. Lote e jornada web usam exatamente o mesmo motor.</aside>
+</section>

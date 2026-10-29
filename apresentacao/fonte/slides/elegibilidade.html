@@ -1,0 +1,35 @@
+<section id="elegibilidade" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · elegibilidade</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Três valores: sim, não e desconhecido</h2>
+</div>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border:2px solid #002D72;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Algum impedimento é <b>verdadeiro</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#002D72"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Inelegível</p>
+<p style="font-size:26px;line-height:1.4">Motivo e próximo passo, sem ofertas</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFBC2;border:2px solid #E0C800;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Algum impedimento é <b>desconhecido</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#002D72"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#002D72">Pendente</p>
+<p style="font-size:26px;line-height:1.4">Recomendação preliminar + perguntas de confirmação</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#F2F4FF;border:2px solid #465EFF;border-radius:20px;padding:36px">
+<p style="font-size:26px;line-height:1.4">Todos os impedimentos são <b>falsos</b></p>
+<x-shape kind="arrow-down" style="width:28px;height:44px;background:#465EFF"></x-shape>
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:40px;font-weight:700;color:#465EFF">Elegível</p>
+<p style="font-size:26px;line-height:1.4">Recomendação completa</p>
+</div>
+</div>
+<div style="display:flex;gap:28px">
+<p style="flex:1;font-size:28px;line-height:1.45"><b style="color:#002D72">Fato estimado conta como desconhecido.</b> Uma probabilidade nunca reprova ninguém.</p>
+<p style="flex:1;font-size:28px;line-height:1.45"><b style="color:#002D72">Impedimentos sem campo na base</b> (área restrita, imóvel tombado, já segurado na BB) viram perguntas.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · app/engine/eligibility.py · catalog/elegibilidade.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">13 / 22</p>
+<aside>A elegibilidade usa lógica de Kleene, com três valores. Se algum impedimento do catálogo é verdadeiro, o caso é inelegível e mostramos o motivo e o que fazer. Se algum é desconhecido, o caso fica pendente: geramos uma recomendação preliminar e as perguntas para fechar a dúvida. Só com todos falsos o caso é elegível. Dois cuidados: fato estimado conta como desconhecido, então uma probabilidade nunca reprova o cliente; e a ausência de dado nunca vira não. Na base de teste, 6 casos são inelegíveis por imóvel em obra, a regra ELG-004. Três impedimentos não têm campo na base, por isso os demais saem como elegíveis sujeitos a confirmação.</aside>
+</section>

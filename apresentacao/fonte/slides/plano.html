@@ -1,0 +1,37 @@
+<section id="plano" data-transition="fade" style="background:#FFFFFF;color:#33405C;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:12px;background:#465EFF"></div>
+<div style="position:absolute;left:0;top:0;width:320px;height:12px;background:#FCFC30"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#465EFF">Back-end · plano e ofertas</p>
+<h2 style="font-family:'Poppins', Arial, sans-serif;font-size:64px;font-weight:700;line-height:1.15;color:#002D72">Regras escolhem o plano mínimo; vence o mais alto</h2>
+</div>
+<div style="display:flex;gap:48px;flex:1">
+<div style="flex:3;display:flex;flex-direction:column;gap:20px">
+<table style="font-size:26px;color:#33405C">
+<tr style="background:#F2F4FF"><th style="width:18%;color:#002D72;padding:14px 20px">Regra</th><th style="width:58%;color:#002D72">Se o caso tem…</th><th style="width:24%;color:#002D72">Plano mínimo</th></tr>
+<tr><td><b>PLN-01</b></td><td>Risco médio/alto de vendaval, granizo ou roubo, ou estoque</td><td>Prático</td></tr>
+<tr><td><b>PLN-02</b></td><td>Fachada de vidro ou 10+ empregados</td><td>Total</td></tr>
+<tr><td><b>PLN-ESP</b></td><td>Cobertura específica da atividade se aplica</td><td>Prático</td></tr>
+<tr><td>—</td><td>Nenhuma regra acionada</td><td>Essencial</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.45;color:#5A6680">Coberturas por bloco: 6 fixas em todos os planos · padrão do plano · específicas (delivery, refrigeração, valores, home office) · opcionais.</p>
+</div>
+<div style="flex:2;display:flex;flex-direction:column;gap:20px">
+<div style="background:#465EFF;border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:32px;font-weight:700;color:#FFFFFF">Melhor ajuste</p>
+<p style="font-size:26px;color:#FFFFFF">O plano mínimo das regras</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Custo-benefício</p>
+<p style="font-size:26px">Um plano abaixo</p>
+</div>
+<div style="border:2px solid #465EFF;border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:8px">
+<p style="font-family:'Poppins', Arial, sans-serif;font-size:30px;font-weight:600;color:#002D72">Proteção ampliada</p>
+<p style="font-size:26px">Um plano acima</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1000px;font-size:24px;color:#5A6680">Negócio de Pé · Back-end · catalog/recomendacao.yaml · catalog/planos.yaml</p>
+<p style="position:absolute;right:128px;bottom:64px;width:200px;text-align:right;font-size:24px;color:#5A6680">14 / 22</p>
+<aside>A escolha do plano é feita por regras declaradas em YAML. Cada regra define um plano mínimo e vence o mais alto acionado. Exposição climática, estoque ou risco de roubo levam ao Prático; fachada de vidro ou dez ou mais empregados levam ao Total; se uma cobertura específica da atividade se aplica, o plano sobe para o Prático. A partir daí geramos três ofertas: o melhor ajuste, um plano abaixo como custo-benefício e um plano acima como proteção ampliada, todas validadas contra o catálogo. As seis coberturas fixas aparecem em todos os planos e nunca podem ser removidas.</aside>
+</section>
