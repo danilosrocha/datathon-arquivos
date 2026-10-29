@@ -1,0 +1,31 @@
+{
+  "casos_total": 144,
+  "pct_processados": 1.0,
+  "taxa_falhas": 0.0,
+  "tempo_execucao_s": 0.82,
+  "pct_com_justificativa": 1.0,
+  "violacoes_elegibilidade": 0,
+  "pct_coberturas_fixas_completas": 1.0,
+  "inconsistencias_plano_coberturas": 0,
+  "pct_coberturas_sem_faixa": 0.0,
+  "media_perguntas_confirmacao": 5.456521739130435,
+  "pct_confianca_baixa": 0.2971014492753623,
+  "estabilidade": 1.0,
+  "consistencia_casos_semelhantes": 0.6323529411764706,
+  "sensibilidade_faixas": 2.5368,
+  "hash_reprodutibilidade": "001cbf5c7e1c81a3ac37a993d96569dd2a50634f8fc50c382a15440e6b63c42d",
+  "distribuicao_elegibilidade": {
+    "pendente": 138,
+    "inelegivel": 6
+  },
+  "distribuicao_planos": {
+    "TOTAL": 47,
+    "PRATICO": 88,
+    "ESSENCIAL": 3
+  },
+  "versoes": {
+    "rules": "2026-10-28.1",
+    "rules_hash": "d17ed7972a358944aa84bee2636728b6f917168c64317cf26099e464226d0b8f",
+    "kg": 1
+  }
+}
